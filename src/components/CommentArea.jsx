@@ -28,6 +28,7 @@ const CommentArea = ({ asin }) => {
       console.log(response);
       if (response.ok) {
         let comments = await response.json();
+        console.log(comments);
         setComment(comments);
         setIsLoading(false);
         setIsError(false);
